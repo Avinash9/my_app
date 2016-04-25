@@ -1,0 +1,25 @@
+####dhango commands
+1.django-admin startproject my_app
+2.django-admin startapp polls
+
+3.cd /usr/local/etc/nginx/
+
+pip install gunicorn
+
+
+
+gunicorn --bind=127.0.0.1:9000 --settings=my_app.settings my_app.wsgi:application
+
+
+GUNICORN_OPTIONS="--bind=127.0.0.1:5000 --workers=4 --access-logfile=$ACCESS_FILE --log-file=$LOG_FILE --log-level=$LOG_LEVEL --settings=$SETTINGS_FILE --pythonpath=$PYTHON_PATH"
+
+
+
+Django==1.7
+requests==2.2.1
+pprintpp==0.2.1
+pep8==1.5.7
+django-tastypie==0.12.0
+
+
+
